@@ -1,0 +1,23 @@
+{
+  "name": "applicature-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "repository": "https://github.com/Belrestro/applicature-test.git",
+  "scripts": {
+    "db-init": "mkdir ./db",
+    "db-start": "mongod --dbpath ./db",
+    "init": "node init-collections",
+    "start": "node app",
+    "postinstall": "npm run db-init;"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "agenda": "^1.0.3",
+    "mongodb": "^2.2.33",
+    "request-promise": "^4.2.2",
+    "sendmail": "^1.2.0"
+  }
+}
